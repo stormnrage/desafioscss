@@ -1,3 +1,7 @@
+@import "nav";
+@import "header";
+@import "main";
+@import "footer";
 
 *{
     box-sizing: border-box;
@@ -12,77 +16,4 @@ body{
 
 ul{
     list-style: none;
-}
-nav{
-    width: 90%;
-    margin: auto;
-    a{
-        img{
-            width: 50px;
-        }
-    }
-    ul{
-        display: grid;
-        grid-template-columns: repeat(11, 1fr);
-        justify-content: space-between;
-        padding: 15px 0;
-        li{
-            a {
-                text-decoration: none;
-                color: black;
-            }
-            a:hover{
-                border-bottom: rgb(244, 124, 124) solid;            
-            }
-        }
-    }
-}
-header{
-    div{
-        text-align: center;
-        padding: 25px;
-        a{
-            text-decoration: none;
-            color: black;
-            a:hover{
-                border-bottom: rgb(244, 124, 124) solid;
-            }
-            img{
-                width: 70%;
-            }
-        }
-    }
-}
-main{
-    h2{
-        padding: 10px;
-        
-    }
-    div{
-        display: grid;
-        grid-template-columns: repeat(3,33%);
-        width: 90%;
-        text-align: center;
-        margin: auto;
-        gap: 20px;
-        a{  
-            text-decoration: none;
-            color: black;
-            img{
-                width: 80%;
-            }
-            img:hover{
-                transform: scale(2);
-            }
-        }
-        a:hover{
-            border-bottom: rgb(244, 124, 124) solid;
-        }
-    }
-}
-footer{
-    a{
-        text-decoration: none;
-        color: black;
-    }
 }

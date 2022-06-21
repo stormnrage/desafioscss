@@ -1,0 +1,31 @@
+@mixin grid-center {
+    display: grid;
+    text-align: center; 
+    
+}
+main{
+    h2{
+        padding: 10px;
+        
+    }
+    div{
+        @include grid-center;        
+        grid-template-columns: repeat(3,33%);
+        width: 90%;        
+        margin: auto;
+        gap: 20px;
+        a{  
+            text-decoration: none;
+            color: black;
+            img{
+                width: 80%;
+            }
+            img:hover{
+                transform: scale(2);
+            }
+        }
+        a:hover{
+            border-bottom: rgb(244, 124, 124) solid;
+        }
+    }
+}
